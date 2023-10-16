@@ -1,0 +1,19 @@
+{{- define "lib-chart.resources.prelive" -}}
+  resources:
+    limits:
+      cpu: {{ .Values.resources.prelive.limits.cpu }}
+      memory: {{ .Values.resources.prelive.limits.memory }}
+    requests:
+      cpu: {{ .Values.resources.prelive.requests.cpu }}
+      memory: {{ .Values.resources.prelive.requests.memory }}
+{{ - end -}}
+
+{{- define "lib-chart.resources.live" -}}
+  resources:
+    limits:
+      cpu: {{ .Values.resources.live.limits.cpu }}
+      memory: {{ .Values.resources.live.limits.memory }}
+    requests:
+      cpu: {{ .Values.resources.live.requests.cpu }}
+      memory: {{ .Values.resources.live.requests.memory }}
+{{ - end -}}

@@ -1,0 +1,18 @@
+stage: "prelive"
+
+resources:
+  prelive:
+    limits:
+      cpu: 4
+      memory: 1024
+    requests:
+      cpu: 4
+      memory: 1024
+
+  live:
+    limits:
+      cpu: 8
+      memory: 2048
+    requests:
+      cpu: 8
+      memory: 2048
